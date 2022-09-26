@@ -1,0 +1,5 @@
+1654406095688	Extract local variable 'collect'
+1654406799882	Extract local variable 'entrySet'
+1654407552357	Extract local variable 'collect2'
+1654408845386	Extract local variable 'collectLinkedHashSet'
+1654413524577	Extract local variable 'groupBy'

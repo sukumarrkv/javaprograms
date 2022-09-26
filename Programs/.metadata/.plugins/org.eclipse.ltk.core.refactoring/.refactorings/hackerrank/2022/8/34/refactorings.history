@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;flatList&apos; from expression &apos;list.stream().flatMap(i -&gt; i.stream()).collect(Collectors.toList())&apos;&#x0D;&#x0A;- Original project: &apos;hackerrank&apos;&#x0D;&#x0A;- Variable name: &apos;flatList&apos;&#x0D;&#x0A;- Destination method: &apos;com.practice.hackerrank.FlatMapRunner.doSomething()&apos;&#x0D;&#x0A;- Variable expression: &apos;list.stream().flatMap(i -&gt; i.stream()).collect(Collectors.toList())&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;flatList&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.practice.hackerrank{FlatMapRunner.java" name="flatList" replace="true" selection="283 67" stamp="1660456643280" version="1.0"/>
+</session>
