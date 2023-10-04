@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="game" class="com.practice.springcore.Contra"></bean>
+   
+   <bean id="student" class="com.practice.springcore.di.Student" >
+	   <property name="id" value="1"></property>
+	   <property name="name" value="ABC"></property>
+   </bean>
+   
+   <bean id="student1" class="com.practice.springcore.di.Student">
+	   <constructor-arg name="id" value="2"></constructor-arg>
+	   <constructor-arg name="name" value="DEF"></constructor-arg>
+   </bean>
+   
+<!--   <bean id="employee" class="com.practice.springcore.di.Employee">
+	   <property name="id" value="1"></property>
+	   <property name="address">
+		   <bean class="com.practice.springcore.di.Address">
+			   <constructor-arg name="line1" value="abc"></constructor-arg>
+			   <constructor-arg name="line2" value="xyz"></constructor-arg>
+		   </bean>
+	   </property>
+   </bean>-->
+   
+   <bean id="employeeObject" class="com.practice.springcore.di.Address">
+			   <constructor-arg name="line1" value="def"></constructor-arg>
+			   <constructor-arg name="line2" value="xyz"></constructor-arg>
+		   </bean>
+   
+   <bean id="employee" class="com.practice.springcore.di.Employee">
+	   <property name="id" value="1"></property>
+	   <property name="address" ref="employeeObject">
+	   </property>
+   </bean>
+
+</beans>
